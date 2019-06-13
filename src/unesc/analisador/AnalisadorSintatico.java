@@ -11,7 +11,7 @@ public class AnalisadorSintatico {
 
     public int validaA(Integer a, String pa){
 
-        //Verifica se "a" é vazio        
+        //Verifica se "a" é vazio
         if(a == null){
 
             // Trata as exceções           
@@ -54,13 +54,10 @@ public class AnalisadorSintatico {
             if (x < 52) {
                 // Compara os valores das pilhas.
                 if (a.equals(x)) {
-
                     // Remove do topo da pilha.
                     pa = pilhaA.pop();
                     x = pilhaX.pop();
-
                 } else {
-
                     // Se os elementos das pilhas forem diferentes retorna a mensagem,
                     // com os elementos divergentes.
                     System.out.println("[Erro 001:" + "Elemento PA [" + pa + "]" + "Elemento PX [" + x + "]");
@@ -92,7 +89,6 @@ public class AnalisadorSintatico {
             }
         }
         System.out.println("PROJETO COMPILADO COM SUCESSO !!!");
-
     }
 
     /**
